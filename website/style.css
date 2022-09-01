@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: 50% 30%;
+    height:100vh;
+    /* background: radial-gradient(circle, rgba(215,39,0,1) 0%, rgba(221,120,13,1) 26%, rgba(219,127,14,1) 37%, rgba(232,156,15,1) 42%, rgba(255,238,39,1) 45%, rgba(255,149,0,1) 51%, rgba(0,0,0,1) 100%); */
+    background: radial-gradient(circle, rgba(215,39,0,1) 0%, rgba(221,120,13,1) 26%, rgba(219,127,14,1) 37%, rgba(232,156,15,1) 42%, rgba(255,238,39,1) 45%, rgba(255,149,0,1) 51%, rgba(59,0,101,1) 90%, #000000 100%);
+    background: linear-gradient(135deg, rgba(215,39,0,1) 0%, rgba(221,120,13,1) 12%, rgba(219,127,14,1) 24%, rgba(232,156,15,1) 35%, rgba(255,237,17,1) 46%, rgba(59,0,101,1) 55%, rgba(48,0,83,1) 81%, rgba(31,0,55,1) 88%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(farthest-corner at 0px 0px, rgba(235,121,28,1) 0%, rgba(238,131,16,1) 10%, rgba(255,186,68,1) 24%, rgba(255,231,143,1) 29%, rgba(45,176,255,1) 55%, rgba(0,107,190,1) 100%, rgba(0,0,0,1) 100%);
+    background-size: 120%;
+    animation: gradient 10s ease-in-out infinite;
+    color: whitesmoke;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+} 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 80% 0%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+.holder{
+    color: #05400c;
+    padding: 10px;
+}
+
+.headline {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 40px;
+}
+.zip {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+.feel{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.entry {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    background: rgba(59, 74, 107, .8);
+}
+#entryHolder{
+    padding: 10px;
+
+    
+}
+
+#date{
+    color: #ffbb50;
+}
+
+#temp{
+    color: #6cdfdc;
+}
+
+#content{
+    color: #29e13d;
+}
+
+.title{
+    font-size: larger;
+    color: whitesmoke;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:rgba(59, 74, 107, .8);
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 423px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #5dbcf6;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:rgba(59, 74, 107, .8);
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    resize: none;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: whitesmoke; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: whitesmoke; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: whitesmoke; 
+    font-family: 'Oswald', sans-serif;
+
+} 
